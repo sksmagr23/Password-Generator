@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>PASSWORD GENERATOR</h1>
+      <div>
+        <span><label for="passwordLength" style="color: white;">Length of Password:</label>
+            <input type="number" id="passwordLength"></span>
+      </div>
+      <div>
+        <input type="text" class="gen" id="password" readonly>
+        <span class = "btn">
+            <button onclick="generate()">Generate Password</button>
+            <button onclick="clearpwd()">Clear</button>
+        </span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
